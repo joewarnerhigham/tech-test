@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo{
+    width: 200px;
+}
+
+.search-bar{
+    border-radius: 4px;
+    text-align: center;
+    border: rgb(33, 68, 62) solid 2px;
+}
+
+

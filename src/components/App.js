@@ -1,10 +1,11 @@
 import React from 'react';
 import '../styles/App.css';
+import Search from './Search';
 
 function App() {
   return (
-    <div className="App">
-      <p>Hello World</p>
+    <div className="App" data-testid='main-div'>
+      <Search />
     </div>
   );
 }
