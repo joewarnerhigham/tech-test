@@ -6,9 +6,10 @@ import App from '../components/App';
 describe('App', () => {
 
   afterEach(cleanup);
-  
- it('should take a snapshot', () => {
-    const { asFragment } = render(<App />)
+
+  const { asFragment } = render(<App />)
+
+  it('render the app', () => {
     
     expect(asFragment(<App />)).toMatchSnapshot()
    })

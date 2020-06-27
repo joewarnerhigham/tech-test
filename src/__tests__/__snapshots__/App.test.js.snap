@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App should take a snapshot 1`] = `
+exports[`App render the app 1`] = `
 <DocumentFragment>
   <div
     class="App"
@@ -13,15 +13,25 @@ exports[`App should take a snapshot 1`] = `
         alt="nasa-logo"
         class="logo"
         data-testid="logo"
-        src="nasa.jpg"
+        src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg"
       />
-      <input
-        class="search-bar"
-        data-testid="search-bar"
-        placeholder="Search"
-        type="text"
-        value=""
-      />
+      <form
+        class="search-form"
+      >
+        <input
+          class="search-bar"
+          data-testid="search-bar"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+        <button
+          class="search-button"
+          type="submit"
+        >
+          Go!
+        </button>
+      </form>
     </div>
   </div>
 </DocumentFragment>

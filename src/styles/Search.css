@@ -1,16 +1,14 @@
-body{
-    display: flex;
-    justify-content: center;
-}
 
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 100px;
 }
 
 .logo{
     width: 200px;
+    padding: 30px;
 }
 
 .search-bar{
@@ -19,4 +17,14 @@ body{
     border: rgb(33, 68, 62) solid 2px;
 }
 
+.search-form{
+    display: flex;
+    flex-direction: column;
+}
 
+.search-button{
+    width: 60px;
+    border: solid, black, 4px;
+    align-self: center;
+    margin: 10px;
+}

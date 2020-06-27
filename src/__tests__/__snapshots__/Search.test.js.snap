@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search bar should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <img
+      alt="nasa-logo"
+      class="logo"
+      data-testid="logo"
+      src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg"
+    />
+    <form
+      class="search-form"
+    >
+      <input
+        class="search-bar"
+        data-testid="search-bar"
+        placeholder="Search"
+        type="text"
+        value=""
+      />
+      <button
+        class="search-button"
+        type="submit"
+      >
+        Go!
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;
