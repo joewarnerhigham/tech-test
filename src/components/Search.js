@@ -1,27 +1,26 @@
-import React, {useState} from 'react'
+import React from 'react'
 import '../styles/Search.css';
 import getImages from '../requests/getImages';
 
 
-const Search = ( {setSearchResults }) => {
-    const [value, setValue] = useState();
+const Search = ( {setSearchResults, searchText, setSearchText}) => {
 
-    const handleSubmit =(event) =>{
-        event.preventDefault()
-        getImages(value)
-    }
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        setSearchResults(await getImages(searchText));
+      };
+
     return (
         <div className='container'>
             <img className='logo'
-                 src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg" 
+                 src="https://www.seekpng.com/png/full/393-3935156_nasa-app-app-logo-png-download-nasa-logo.png" 
                  alt='nasa-logo'
                  data-testid='logo'
             />
             <form className='search-form' onSubmit={handleSubmit}>
                 <input className='search-bar'
                     type='text' 
-                    value={value}
-                    onChange={(e) => setValue(e.target.value)} 
+                    onChange={(e) => setSearchText(e.target.value)} 
                     placeholder='Search'
                     data-testid='search-bar'
                 />

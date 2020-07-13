@@ -1,7 +1,7 @@
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    height: max-content;
     padding: 30px;
     background-image: url('https://time.com/wp-content/uploads/2017/10/229-westerlund-21.jpg?w=2000');
 }

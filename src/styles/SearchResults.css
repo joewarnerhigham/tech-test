@@ -1,0 +1,30 @@
+.pic-container{
+    background-color: rgba(88, 90, 90, 0.082);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 50vh;
+    overflow: scroll;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.box-image{
+    max-width: 25vh;
+    max-height: 25vh;
+    transition: 1.5s;
+    margin: 10px;
+}
+
+.box-image:hover{
+    transform: scale(1.1);
+    border: white solid 3px;
+    cursor: pointer;
+    
+}
+
+p{
+    align-self: center;
+    text-align: center;
+}
