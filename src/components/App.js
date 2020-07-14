@@ -10,7 +10,9 @@ function App() {
   return (
     <div className="App" data-testid='main-div'>
       <Search setSearchResults={setSearchResults} searchText={searchText} setSearchText={setSearchText} />
-      <SearchResults results={searchResults} />
+      {searchResults.length > 0 && <SearchResults results={searchResults}/>}
+      {searchText.length > 0 && !searchResults.length && <p> No results...</p>}
+      
     </div>
   );
   

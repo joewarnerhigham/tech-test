@@ -10,10 +10,6 @@ const SearchResults = ({results}) => {
         win.focus();
       }
 
-
-    if (!results.length) {
-        return <p>No results</p>;
-      } else {
         return (
           <div className='pic-container'>
             {results.map((image) => (
@@ -22,7 +18,6 @@ const SearchResults = ({results}) => {
           </div>
         );
       }
-    }
 
 SearchResults.propTypes = {
         results: propTypes.array.isRequired

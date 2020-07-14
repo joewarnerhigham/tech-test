@@ -1,4 +1,5 @@
 import React from 'react'
+import propTypes from 'prop-types';
 import '../styles/Search.css';
 import getImages from '../requests/getImages';
 
@@ -28,6 +29,10 @@ const Search = ( {setSearchResults, searchText, setSearchText}) => {
             </form>
         </div>
     )
+}
+
+Search.propTypes = {
+    searchText: propTypes.string.isRequired,
 }
 
 export default Search
