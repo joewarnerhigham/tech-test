@@ -4,11 +4,12 @@ import '../styles/Search.css';
 import getImages from '../requests/getImages';
 
 
-const Search = ( {setSearchResults, searchText, setSearchText}) => {
+const Search = ( {setSearchResults, searchText, setSearchText, setSearched}) => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
         setSearchResults(await getImages(searchText));
+        setSearched(true);
       };
 
     return (

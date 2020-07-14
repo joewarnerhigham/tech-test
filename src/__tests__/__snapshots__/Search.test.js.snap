@@ -9,7 +9,7 @@ exports[`Search bar should render correctly 1`] = `
       alt="nasa-logo"
       class="logo"
       data-testid="logo"
-      src="https://cdn.cnn.com/cnnnext/dam/assets/200424060716-nasa-worm-logo.jpg"
+      src="https://www.seekpng.com/png/full/393-3935156_nasa-app-app-logo-png-download-nasa-logo.png"
     />
     <form
       class="search-form"
@@ -19,7 +19,6 @@ exports[`Search bar should render correctly 1`] = `
         data-testid="search-bar"
         placeholder="Search"
         type="text"
-        value=""
       />
       <button
         class="search-button"
